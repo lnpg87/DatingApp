@@ -1,0 +1,18 @@
+<h4>Internal server error - refreshing the page will make the error disappear!</h4>
+
+<ng-container *ngIf="error">
+    <h5 class="text-danger">Error: {{error.message}}</h5>
+    <p class="font-weight-bold">Note: Este mensaje funciona bien</p>
+    <p>Que hacer?</p>
+    <ol>
+        <li>Abrir chrone dev tools</li>
+        <li>Inspect</li>
+        <li>Checking failure request</li>
+        <li>URL incorrect</li>
+        <li>Reproduce in postman</li>
+    </ol>
+    <p>Siga los siguientes detalles</p>
+    <code class="mt-5">
+        {{error.details}}
+    </code>
+</ng-container>
