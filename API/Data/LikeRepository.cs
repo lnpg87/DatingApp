@@ -44,7 +44,7 @@ namespace API.Data
             {
                 Username = user.UserName,
                 KnownAs = user.KnownAs,
-                Age = user.DateofBirth.CalculateAge(),
+                Age = user.DateOfBirth.CalculateAge(),
                 PhotoUrl = user.Photos.FirstOrDefault(p => p.IsMain).Url,
                 City = user.City,
                 Id = user.Id

@@ -40,7 +40,7 @@ namespace API.Data
             var minDob = DateTime.Today.AddYears(-userParams.MaxAge - 1);
             var maxDob = DateTime.Today.AddYears(-userParams.MinAge);
 
-            query = query.Where(u=>u.DateofBirth>=minDob && u.DateofBirth<=maxDob);
+            query = query.Where(u=>u.DateOfBirth>=minDob && u.DateOfBirth<=maxDob);
 
             query = userParams.OrderBy switch
             {
