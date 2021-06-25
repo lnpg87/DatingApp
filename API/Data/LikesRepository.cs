@@ -10,10 +10,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Data
 {
-    public class LikeRepository : ILikesRepository
+    public class LikesRepository : ILikesRepository
     {
         private readonly DataContext _context;
-        public LikeRepository(DataContext context)
+        public LikesRepository(DataContext context)
         {
             _context = context;
         }
