@@ -15,7 +15,7 @@ namespace API.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
         {
             services.AddSingleton<PresenceTracker>();
-            services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));
+            services.Configure<CloudinarySettings>(config.GetSection("CloudinarySetting"));
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IPhotoService, PhotoService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
